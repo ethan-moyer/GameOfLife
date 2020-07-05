@@ -27,8 +27,8 @@ def main(x1, y1, zoom, seed=None):
         if is_key_pressed(KEY_C):
             game.clear()
 
-        mouse_pos[0] = min(max(0, get_mouse_position()[0]), 499)
-        mouse_pos[1] = min(max(0, get_mouse_position()[1]), 499)
+        mouse_pos[0] = min(max(0, get_mouse_position()[0]), x1*zoom)
+        mouse_pos[1] = min(max(0, get_mouse_position()[1]), y1*zoom)
         grid_pos_x = int(mouse_pos[0] / zoom)
         grid_pos_y = int(mouse_pos[1] / zoom)
 
