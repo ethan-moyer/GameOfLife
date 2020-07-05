@@ -10,10 +10,13 @@ raylib-py==0.1.1
 scipy==1.5.0
 ```
 ### Starting the Game
-Run `__main__.py`, then you must state your game and window dimensions.
+Run `__main__.py`, then you must state your game dimensions and zoom scale (1 being 1px x 1px = 1 cell).
 ```
 $ python __main__.py
-
+Game X Size: 100
+Game Y Size: 100
+Zoom Scale: 5
+```
 ## Controls
 Button | Action
 ------------ | -------------
