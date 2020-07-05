@@ -39,3 +39,6 @@ class Game:
                     self.grid[row,col] = 1
                 else:
                     self.grid[row,col] = 0
+
+    def clear(self):
+        self.grid = np.zeros((self.grid.shape[1], self.grid.shape[0]))
