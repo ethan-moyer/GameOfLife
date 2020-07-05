@@ -11,9 +11,7 @@ class Game:
         seed (int, optional): Grid generator seed.
     """    
     
-    def __init__(self, x, y, seed = None):
-        if seed:
-            np.random.seed(seed)
+    def __init__(self, x, y):
         self.grid = np.random.randint(2, size=(y, x))
     
     def print_grid(self):
